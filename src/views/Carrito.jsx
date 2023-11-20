@@ -1,6 +1,6 @@
-export default function Carrito () {
+export default function Carrito() {
   return (
-    <div className='containerpokemones'>
+    <div className='containercarrito'>
       <h1>Destalle del pedido</h1>
 
     </div>
