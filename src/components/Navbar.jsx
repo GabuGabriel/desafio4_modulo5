@@ -1,8 +1,11 @@
 import { NavLink } from 'react-router-dom'
+import { PizzaContexto } from '../Contexto/PizzaContexto'
+import { useContext } from 'react'
 import '../App.css'
 
 export default function Navbar () {
   const setActiveClass = ({ isActive }) => (isActive ? 'active' : undefined)
+  const {  precioTotal } = useContext(PizzaContexto)
   return (
     <>
       <nav className='navcss'>
@@ -15,7 +18,7 @@ export default function Navbar () {
         <div className='divlinks'>
           <span>🛒</span>
           <NavLink className={setActiveClass} to='/Carrito'>
-            Carrito
+            Carrito: {precioTotal}
           </NavLink>
         </div>
       </nav>

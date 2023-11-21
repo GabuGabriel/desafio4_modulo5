@@ -19,7 +19,7 @@ const Detalle = () => {
     <div className='containerdetalle'>
       <img src={img} alt={name} />
       <h1>{name}</h1>
-      <p>Descripción de la pizza: {pizza.desc}</p>
+      <p>{pizza.desc}</p>
       <h2>Ingredientes</h2>
       <ul>
         {ingredients.map((ingredient, index) => (

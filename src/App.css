@@ -18,7 +18,7 @@ h1 {
 
 h2 {
   text-transform: capitalize;
-  color: rgb(255, 255, 255);
+  color: rgb(230, 24, 24);
   font-size: 2em;
   font-weight: bolder;
 }
@@ -81,12 +81,19 @@ span {
 }
 
 .divcatalogo {
+  max-width: 100%;
   display: flex;
-  gap: 6px;
-  margin: 1.5em;
+  background-color: bisque;
 }
 
+/* .pizzaList{
+}
+ */
+
 .cardcontainer {
+  width: 300px;
+  background-color: rgb(192, 185, 175);
+  margin: 15px;
   border: #222224 solid 1px;
   padding: 1em;
 }
@@ -120,17 +127,6 @@ span {
   background-position: center;
 }
 
-.containerdetallepokemon {
-  height: 350px;
-  width: 600px;
-  border-radius: 25px;
-  border: solid 8px black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.685);
-  box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.336);
-}
 
 li {
   text-transform: capitalize;
@@ -149,7 +145,7 @@ li {
   justify-content: center;
   align-items: center;
   gap: 1em;
-  background-image: url('./assets/images/fondo.png');
+  background-image: url('./assets/images/404.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

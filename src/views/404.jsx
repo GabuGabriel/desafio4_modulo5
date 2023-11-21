@@ -1,3 +1,4 @@
+import '../App.css'
 import { NavLink } from 'react-router-dom'
 
 export default function Pagina404 () {
