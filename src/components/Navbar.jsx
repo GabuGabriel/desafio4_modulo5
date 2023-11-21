@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import '../App.css'
 
-export default function Navbar() {
+export default function Navbar () {
   const setActiveClass = ({ isActive }) => (isActive ? 'active' : undefined)
   return (
     <>

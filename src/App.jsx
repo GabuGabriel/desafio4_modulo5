@@ -6,7 +6,7 @@ import Pagina404 from './views/404'
 import { Provider } from './Contexto/PizzaContexto'
 import Carrito from './views/Carrito'
 
-function App() {
+function App () {
   return (
     <BrowserRouter>
       <Provider>
