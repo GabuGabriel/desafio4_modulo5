@@ -17,7 +17,8 @@ h1 {
 }
 
 h2 {
-  color: rgb(75, 70, 70);
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
   font-size: 2em;
   font-weight: bolder;
 }
@@ -35,6 +36,9 @@ h3 {
   box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.774);
 }
 
+span {
+  color: antiquewhite;
+}
 
 
 /* estilosnavbar */
@@ -64,7 +68,7 @@ h3 {
 /* estilosvistahome */
 .containerHome {
   max-width: 100%;
-  height: 25vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,10 +80,15 @@ h3 {
   background-position: center;
 }
 
-.containerimageneshome {
+.divcatalogo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 6px;
+  margin: 1.5em;
+}
+
+.cardcontainer {
+  border: #222224 solid 1px;
+  padding: 1em;
 }
 
 /* estilosbuscador */
@@ -94,48 +103,6 @@ h3 {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-}
-
-.divformulario {
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-
-}
-
-select {
-  height: 30px;
-  width: 200px;
-  font-size: 1em;
-  text-align: center;
-  color: black !important;
-  background-color: rgba(255, 255, 255, 0.89);
-  border-radius: 55px;
-  border: solid 2px #222224;
-  box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.774);
-}
-
-option {
-  color: black;
-}
-
-form {
-  padding-top: 30px;
-  height: 350px;
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 /* estilosdetalle */
@@ -166,6 +133,7 @@ form {
 }
 
 li {
+  text-transform: capitalize;
   font-size: 20px;
   padding-bottom: 6px;
   color: black;

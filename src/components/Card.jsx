@@ -1,12 +1,15 @@
+import { Link } from 'react-router-dom'
 import { useContext } from "react"
 import { PizzaContexto } from "../Contexto/PizzaContexto"
 import '../App.css'
 
 const Card = ({ pizza }) => {
-  const { name, img, ingredients, price } = pizza
+  const { id, name, img, ingredients, price } = pizza
   return (
     <div className='cardcontainer'>
-      <img src={img} alt={name} />
+      <div className='imagencard'>
+        <img src={img} alt={name} height={200} width={200} />
+      </div>
       <div className='carddetail'>
         <h2>{name}</h2>
         <hr />
@@ -17,7 +20,9 @@ const Card = ({ pizza }) => {
         </ul>
         <hr />
         <p>Precio: {price}</p>
-        <button>Detalle</button>
+        <Link to={`/Detalle/${id}`}>
+          <button>Detalle</button>
+        </Link>
         <button>Agregar al carrito</button>
       </div>
     </div>

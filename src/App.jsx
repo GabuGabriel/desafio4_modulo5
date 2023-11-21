@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Pizza from './views/Pizza'
+import Detalle from './views/Detalle'
 import Home from './views/Home'
 import Pagina404 from './views/404'
 import { Provider } from './Contexto/PizzaContexto'
@@ -13,7 +13,7 @@ function App () {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/Pizza' element={<Pizza />} />
+          <Route path='/Detalle/:id' element={<Detalle />} />
           <Route path='/Carrito' element={<Carrito />} />
           <Route path='*' element={<Pagina404 />} />
         </Routes>
